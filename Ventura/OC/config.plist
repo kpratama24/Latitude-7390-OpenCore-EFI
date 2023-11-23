@@ -18,7 +18,7 @@
 				<key>Comment</key>
 				<string>SSDT-PLUG.aml</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-PLUG.aml</string>
 			</dict>
@@ -74,8 +74,6 @@
 				<data>WFNJRA==</data>
 				<key>ReplaceMask</key>
 				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
@@ -182,6 +180,11 @@
 	<dict>
 		<key>Add</key>
 		<dict>
+			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
+			<dict>
+				<key>layout-id</key>
+				<integer>17</integer>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
@@ -199,11 +202,6 @@
 				<key>framebuffer-con1-type</key>
 				<data>AAgAAA==</data>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
-			<dict>
-				<key>layout-id</key>
-				<integer>17</integer>
-			</dict>
 		</dict>
 		<key>Delete</key>
 		<dict/>
@@ -220,7 +218,7 @@
 				<key>Comment</key>
 				<string>AirportItlwm.kext</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AirportItlwm</string>
 				<key>MaxKernel</key>
@@ -238,7 +236,7 @@
 				<key>Comment</key>
 				<string>IntelBluetoothFirmware.kext</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/IntelBluetoothFirmware</string>
 				<key>MaxKernel</key>
@@ -526,7 +524,7 @@
 				<key>Comment</key>
 				<string>BlueToolFixup.kext</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/BlueToolFixup</string>
 				<key>MaxKernel</key>
@@ -580,7 +578,7 @@
 				<key>Comment</key>
 				<string>IntelBTPatcher.kext</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/IntelBTPatcher</string>
 				<key>MaxKernel</key>
@@ -724,7 +722,7 @@
 				<key>Comment</key>
 				<string>RealtekCardReader.kext</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/RealtekCardReader</string>
 				<key>MaxKernel</key>
@@ -742,7 +740,7 @@
 				<key>Comment</key>
 				<string>RealtekCardReaderFriend.kext</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/RealtekCardReaderFriend</string>
 				<key>MaxKernel</key>
@@ -895,8 +893,6 @@
 		<array/>
 		<key>Boot</key>
 		<dict>
-			<key>InstanceIdentifier</key>
-			<string></string>
 			<key>ConsoleAttributes</key>
 			<integer>0</integer>
 			<key>HibernateMode</key>
@@ -904,7 +900,9 @@
 			<key>HibernateSkipsPicker</key>
 			<false/>
 			<key>HideAuxiliary</key>
-			<false/>
+			<true/>
+			<key>InstanceIdentifier</key>
+			<string></string>
 			<key>LauncherOption</key>
 			<string>Disabled</string>
 			<key>LauncherPath</key>
@@ -918,7 +916,7 @@
 			<key>PickerVariant</key>
 			<string>Acidanthera\GoldenGate</string>
 			<key>PollAppleHotKeys</key>
-			<false/>
+			<true/>
 			<key>ShowPicker</key>
 			<true/>
 			<key>TakeoffDelay</key>
@@ -968,10 +966,10 @@
 		</array>
 		<key>Security</key>
 		<dict>
-			<key>ApECID</key>
-			<integer>0</integer>
 			<key>AllowSetDefault</key>
 			<true/>
+			<key>ApECID</key>
+			<integer>0</integer>
 			<key>AuthRestart</key>
 			<false/>
 			<key>BlacklistAppleUpdate</key>
@@ -1118,7 +1116,7 @@
 			<key>AdviseFeatures</key>
 			<false/>
 			<key>MLB</key>
-			<string>FVF853401GU00008C</string>
+			<string>FVF025500QX0000JA</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
@@ -1132,9 +1130,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro15,4</string>
 			<key>SystemSerialNumber</key>
-			<string>FVFY1SYYL40Y</string>
+			<string>FVFCWMZ4L40Y</string>
 			<key>SystemUUID</key>
-			<string>5422F4AF-F4AA-49A8-8E04-18DF2FC7FA9D</string>
+			<string>27230652-6CE9-4285-A159-9EBF78176C4F</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1384,8 +1382,6 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
-			<key>ShimRetainProtocol</key>
-			<false/>
 			<key>ActivateHpetSupport</key>
 			<false/>
 			<key>DisableSecurityPolicy</key>
@@ -1411,6 +1407,8 @@
 			<key>ResizeGpuBars</key>
 			<integer>-1</integer>
 			<key>ResizeUsePciRbIo</key>
+			<false/>
+			<key>ShimRetainProtocol</key>
 			<false/>
 			<key>TscSyncTimeout</key>
 			<integer>0</integer>
