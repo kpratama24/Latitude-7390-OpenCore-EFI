@@ -22,9 +22,9 @@
 | --------- | ------------------------------------ |
 | CPU       | Intel Core i7-8650U                  |
 | GPU       | Intel UHD Graphics 620               |
-| SSD       | Western Digital PC SN720 NVME        |
-| Memory    | 8GB DDR4 2400Mhz                    |
-| WiFi & BT | Broadcom BCM94360             |
+| SSD       | INTEL SSDSCKKF180G8L M.2 SATA        |
+| Memory    | 8GB DDR4 2400Mhz                     |
+| WiFi & BT | Broadcom BCM94360                    |
 
 ## ❗ Post Installation
 
